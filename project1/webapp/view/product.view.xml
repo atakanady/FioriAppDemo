@@ -1,0 +1,51 @@
+<mvc:View controllerName="com.local.project1.controller.product"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m" 
+    displayBlock="true"
+    xmlns:tnt="sap.tnt"
+    class="sapUiTinyMargin">
+  <VBox id="_IDGenVBox1" renderType="Bare" alignItems="Start" justifyContent="Start" height="100%">
+   
+		<Button id="_IDGenButton1"
+			text="Toggle Collapse/Expand"
+			icon="sap-icon://menu2"
+			press=".onCollapseExpandPress" />
+		<Button id="_IDGenButton2"
+			text="Show/Hide &quot;Walked&quot;"
+			icon="sap-icon://menu2"
+			press=".onHideShowWalkedPress" />
+
+		<tnt:SideNavigation id="sideNavigation" selectedKey="walked">
+			<tnt:NavigationList id="_IDGenNavigationList1">
+				<tnt:NavigationListItem id="_IDGenNavigationListItem1" text="Home" icon="sap-icon://home" />
+				<tnt:NavigationListGroup id="_IDGenNavigationListGroup1" text="New">
+					<tnt:NavigationListItem id="_IDGenNavigationListItem2" text="People" icon="sap-icon://people-connected" />
+					<tnt:NavigationListItem id="_IDGenNavigationListItem3" text="Building" icon="sap-icon://building" />
+					<tnt:NavigationListItem id="_IDGenNavigationListItem4" text="Mileage" icon="sap-icon://mileage">
+						<tnt:NavigationListItem id="_IDGenNavigationListItem5" text="Driven" />
+						<tnt:NavigationListItem text="Walked" id="walked" />
+					</tnt:NavigationListItem>
+				</tnt:NavigationListGroup>
+				<tnt:NavigationListGroup id="_IDGenNavigationListGroup2" text="Recently used">
+					<tnt:NavigationListItem id="_IDGenNavigationListItem6" text="Managing My Area" icon="sap-icon://kpi-managing-my-area" />
+					<tnt:NavigationListItem id="_IDGenNavigationListItem7" text="Flight" icon="sap-icon://flight" />
+					<tnt:NavigationListItem id="_IDGenNavigationListItem8" text="Map" icon="sap-icon://map-2" />
+				</tnt:NavigationListGroup>
+				<tnt:NavigationListGroup id="_IDGenNavigationListGroup3" text="Restricted" enabled="false">
+					<tnt:NavigationListItem id="_IDGenNavigationListItem9" text="Running" icon="sap-icon://physical-activity" />
+					<tnt:NavigationListItem id="_IDGenNavigationListItem10" text="Scissors" icon="sap-icon://scissors" />
+				</tnt:NavigationListGroup>
+				<tnt:NavigationListItem id="_IDGenNavigationListItem11" text="Transport" icon="sap-icon://passenger-train" />
+			</tnt:NavigationList>
+			<tnt:fixedItem>
+				<tnt:NavigationList id="_IDGenNavigationList2">
+					<tnt:NavigationListItem id="_IDGenNavigationListItem12" text="Bar Chart" icon="sap-icon://bar-chart" />
+					<tnt:NavigationListItem id="_IDGenNavigationListItem13" selectable="false" href="https://sap.com" target="_blank" text="External Link" icon="sap-icon://attachment" />
+					<tnt:NavigationListItem id="_IDGenNavigationListItem14" text="Compare" icon="sap-icon://compare" />
+				</tnt:NavigationList>
+			</tnt:fixedItem>
+		</tnt:SideNavigation>
+
+       
+	</VBox>
+</mvc:View>
